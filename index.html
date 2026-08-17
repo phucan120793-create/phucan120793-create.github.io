@@ -20,19 +20,26 @@
          — đây mới là cách CHÍNH THỨC để "soạn sẵn vài dòng giới thiệu"
          khi chia sẻ, xem thêm attemptShare() trong QuestContext.jsx. -->
     <meta property="og:type" content="website" />
+    <!-- og:url tuyệt đối — Facebook khuyến nghị bắt buộc để scraper của
+         họ nhận đúng 1 "trang chính tắc" duy nhất, không tách lẻ dữ
+         liệu cache theo từng biến thể URL (kèm query string chia sẻ...). -->
+    <meta property="og:url" content="https://aotagame.com/" />
     <meta property="og:title" content="AOTA — Ao Làng Việt Nam" />
     <meta
       property="og:description"
       content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt — chơi miễn phí, không cần cài đặt."
     />
-    <meta property="og:image" content="./aota-logo.png" />
+    <!-- Ảnh xem trước — BẮT BUỘC dùng URL TUYỆT ĐỐI (không phải /aota-logo.png
+         tương đối) để Facebook/Zalo/Messenger chắc chắn tải được ảnh khi
+         hiện khung xem trước lúc dán link/chia sẻ. -->
+    <meta property="og:image" content="https://aotagame.com/aota-logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AOTA — Ao Làng Việt Nam" />
     <meta
       name="twitter:description"
       content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt."
     />
-    <meta name="twitter:image" content="./aota-logo.png" />
+    <meta name="twitter:image" content="https://aotagame.com/aota-logo.png" />
 
     <!-- PWA — "Thêm vào MH chính" trên iPhone/Android chạy ở chế độ
          standalone (display:standalone trong manifest), ẩn HẲN thanh
@@ -46,7 +53,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="AOTA" />
     <link rel="apple-touch-icon" href="./aota-logo.png" />
-    <script type="module" crossorigin src="./assets/index-b0hEs0c4.js"></script>
+    <script type="module" crossorigin src="./assets/index-VUpBoccM.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/soundManager-GkrY2amc.js">
     <link rel="modulepreload" crossorigin href="./assets/saveManager-BpBkAeM0.js">
     <link rel="modulepreload" crossorigin href="./assets/FishRosterContext-DUUIxR1C.js">
