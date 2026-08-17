@@ -3,14 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport-fit=cover: bắt buộc để env(safe-area-inset-*) (HUD —
+         xem App.css) thật sự có giá trị khác 0 trên iPhone có notch/
+         Dynamic Island/thanh cử chỉ, thay vì luôn bằng 0. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>AOTA — Vietnamese Village Pond</title>
-    <script type="module" crossorigin src="./assets/index-GsQhxmYw.js"></script>
+
+    <!-- Open Graph — đọc bởi Facebook/Messenger/Zalo... khi ai đó dán
+         link game vào khung chat/bài đăng, để hiện sẵn tiêu đề + mô tả
+         đẹp thay vì chỉ 1 dòng URL trần. sharer.php của Facebook không
+         còn nhận text tùy ý qua query string (?quote= đã bị bỏ từ lâu)
+         — đây mới là cách CHÍNH THỨC để "soạn sẵn vài dòng giới thiệu"
+         khi chia sẻ, xem thêm attemptShare() trong QuestContext.jsx. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AOTA — Ao Làng Việt Nam" />
+    <meta
+      property="og:description"
+      content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt — chơi miễn phí, không cần cài đặt."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AOTA — Ao Làng Việt Nam" />
+    <meta
+      name="twitter:description"
+      content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt."
+    />
+
+    <!-- PWA — "Thêm vào MH chính" trên iPhone/Android chạy ở chế độ
+         standalone (display:standalone trong manifest), ẩn HẲN thanh
+         địa chỉ/thanh công cụ trình duyệt — cách DUY NHẤT thật sự đáng
+         tin cậy để làm việc này trên Safari iOS (Fullscreen API — nút
+         ⛶ trong thanh điều khiển camera — chỉ hỗ trợ từ iOS 16.4 trở
+         lên và cần bấm tay mỗi lần mở lại trang, không tự nhớ). -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#0a1a18" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AOTA" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <script type="module" crossorigin src="./assets/index-2iIOjX_N.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/soundManager-_m3_Q3CO.js">
-    <link rel="modulepreload" crossorigin href="./assets/saveManager-LPv4qRcb.js">
-    <link rel="modulepreload" crossorigin href="./assets/FishRosterContext-CJFmOTOS.js">
-    <link rel="modulepreload" crossorigin href="./assets/fishModelLoader-BLUE7l3G.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-7MpWzWK4.css">
+    <link rel="modulepreload" crossorigin href="./assets/FishRosterContext-DmQhZKci.js">
+    <link rel="modulepreload" crossorigin href="./assets/fishModelLoader-C9oQtP_t.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Ck6Qqw8Y.css">
   </head>
   <body>
     <div id="root"></div>

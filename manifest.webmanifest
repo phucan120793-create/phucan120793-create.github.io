@@ -1,0 +1,19 @@
+{
+  "name": "AOTA — Ao Làng Việt Nam",
+  "short_name": "AOTA",
+  "description": "Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a1a18",
+  "theme_color": "#0a1a18",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
