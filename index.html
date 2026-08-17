@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <!-- Logo thật của AOTA (cá koi + sen) — dùng làm icon tab trình
+         duyệt VÀ icon app khi "Thêm vào Màn hình chính" (apple-touch-icon
+         bên dưới, + icons trong manifest.webmanifest), thay cho icon
+         tím trừu tượng mặc định trước đây. -->
+    <link rel="icon" type="image/png" href="./aota-logo.png" />
     <!-- viewport-fit=cover: bắt buộc để env(safe-area-inset-*) (HUD —
          xem App.css) thật sự có giá trị khác 0 trên iPhone có notch/
          Dynamic Island/thanh cử chỉ, thay vì luôn bằng 0. -->
@@ -21,12 +25,14 @@
       property="og:description"
       content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt — chơi miễn phí, không cần cài đặt."
     />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="./aota-logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AOTA — Ao Làng Việt Nam" />
     <meta
       name="twitter:description"
       content="Nuôi cá, chăm ao, khám phá một góc quê hương Đồng Tháp Mười ngay trên trình duyệt."
     />
+    <meta name="twitter:image" content="./aota-logo.png" />
 
     <!-- PWA — "Thêm vào MH chính" trên iPhone/Android chạy ở chế độ
          standalone (display:standalone trong manifest), ẩn HẲN thanh
@@ -39,8 +45,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="AOTA" />
-    <link rel="apple-touch-icon" href="./favicon.svg" />
-    <script type="module" crossorigin src="./assets/index-2iIOjX_N.js"></script>
+    <link rel="apple-touch-icon" href="./aota-logo.png" />
+    <script type="module" crossorigin src="./assets/index-DqNQwjW0.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/soundManager-_m3_Q3CO.js">
     <link rel="modulepreload" crossorigin href="./assets/FishRosterContext-DmQhZKci.js">
     <link rel="modulepreload" crossorigin href="./assets/fishModelLoader-C9oQtP_t.js">
