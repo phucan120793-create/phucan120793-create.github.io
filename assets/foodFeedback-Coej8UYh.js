@@ -1,0 +1,1 @@
+var e={message:null,id:0,durationMs:null},t=new Set;function n(){t.forEach(e=>e())}function r(){return e}function i(t,r=null){e={message:t,id:e.id+1,durationMs:r},n()}function a(e){return t.add(e),()=>t.delete(e)}export{i as n,a as r,r as t};
