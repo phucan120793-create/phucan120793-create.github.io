@@ -1,0 +1,12 @@
+AOTA — farm 3D models
+=====================
+
+Livestock models (pig.glb, cow.glb, water_buffalo.glb, chicken.glb):
+  Author : Quaternius  (https://quaternius.com/  ·  https://poly.pizza/u/Quaternius)
+  Licence: CC0 1.0 (Public Domain) — https://creativecommons.org/publicdomain/zero/1.0/
+  Source : https://poly.pizza/  (Farm Animal Pack / Ultimate Animated Animals)
+
+CC0 requires no attribution; kept here as a courtesy / provenance record.
+
+Not yet replaced with GLB models (still drawn procedurally in code):
+  vit_co, ngan_xiem (ducks) and all garden crops.
